@@ -70,6 +70,9 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+document.getElementById("openModalBtn2")?.addEventListener("click", openModal);
+
+
 // ----- Form validation -----
 function isValidEmail(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
