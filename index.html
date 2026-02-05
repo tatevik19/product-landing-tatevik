@@ -8,16 +8,28 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container">
-    <h1 class="logo">TatevikGuide</h1>
-    <a href="#pricing" class="btn primary">Get Started</a>
-  </div>
-</header>
+    <header class="site-header">
+        <div class="container header-inner">
+          <a class="logo" href="#top">TatevikGuide</a>
+      
+          <nav class="nav" aria-label="Primary navigation">
+            <a class="nav-link" href="#showcase">Showcase</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#benefits">Benefits</a>
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </nav>
+      
+          <button class="btn primary" id="openModalBtn" type="button">
+            Get Started
+          </button>
+        </div>
+      </header>
+      
 
 <main>
 
-<section class="hero">
+<section class="hero" id="top">
   <div class="container">
     <h2>Your smart guide for building better products</h2>
     <p>Turn ideas into clean, user-friendly experiences faster.</p>
@@ -25,7 +37,7 @@
   </div>
 </section>
 
-<section class="showcase">
+<section class="showcase" id="showcase">
   <div class="container grid">
     <div class="card">
       <h3>Fast Setup</h3>
@@ -42,7 +54,48 @@
   </div>
 </section>
 
-<section class="benefits">
+<section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Product Gallery</h2>
+  
+      <div class="filter-bar" role="tablist" aria-label="Gallery filters">
+        <button class="filter-btn active" type="button" data-filter="all">All</button>
+        <button class="filter-btn" type="button" data-filter="ui">UI</button>
+        <button class="filter-btn" type="button" data-filter="api">API</button>
+        <button class="filter-btn" type="button" data-filter="mobile">Mobile</button>
+      </div>
+  
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Using placeholders; replace with real images later if you want -->
+        <button class="gallery-item" type="button" data-category="ui" data-src="https://picsum.photos/seed/ui1/1200/800" aria-label="Open UI image 1">
+          <img src="https://picsum.photos/seed/ui1/600/400" alt="UI preview 1" />
+        </button>
+  
+        <button class="gallery-item" type="button" data-category="ui" data-src="https://picsum.photos/seed/ui2/1200/800" aria-label="Open UI image 2">
+          <img src="https://picsum.photos/seed/ui2/600/400" alt="UI preview 2" />
+        </button>
+  
+        <button class="gallery-item" type="button" data-category="api" data-src="https://picsum.photos/seed/api1/1200/800" aria-label="Open API image 1">
+          <img src="https://picsum.photos/seed/api1/600/400" alt="API preview 1" />
+        </button>
+  
+        <button class="gallery-item" type="button" data-category="api" data-src="https://picsum.photos/seed/api2/1200/800" aria-label="Open API image 2">
+          <img src="https://picsum.photos/seed/api2/600/400" alt="API preview 2" />
+        </button>
+  
+        <button class="gallery-item" type="button" data-category="mobile" data-src="https://picsum.photos/seed/mobile1/1200/800" aria-label="Open Mobile image 1">
+          <img src="https://picsum.photos/seed/mobile1/600/400" alt="Mobile preview 1" />
+        </button>
+  
+        <button class="gallery-item" type="button" data-category="mobile" data-src="https://picsum.photos/seed/mobile2/1200/800" aria-label="Open Mobile image 2">
+          <img src="https://picsum.photos/seed/mobile2/600/400" alt="Mobile preview 2" />
+        </button>
+      </div>
+    </div>
+  </section>
+  
+
+<section class="benefits" id="benefits">
   <div class="container grid">
     <div>⚡ Faster workflow</div>
     <div>📱 Mobile-friendly</div>
@@ -50,7 +103,7 @@
   </div>
 </section>
 
-<section class="testimonials">
+<section class="testimonials" id="testimonials">
   <div class="container grid">
     <blockquote>
       “This made our launch ridiculously easy.”
